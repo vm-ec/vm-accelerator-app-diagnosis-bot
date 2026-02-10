@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/**/*.py": {
+      "excludeFiles": "{public,tests,docs,*.cache,README.md,.pnpm-store}/**"
+    }
+  }
+}
