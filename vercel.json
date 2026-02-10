@@ -1,7 +1,13 @@
 {
   "functions": {
-    "api/**/*.py": {
-      "excludeFiles": "{public,tests,docs,*.cache,README.md,.pnpm-store}/**"
+    "index.py": {
+      "excludeFiles": "{public,tests,docs,data,*.cache,README.md}/**"
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "index.py"
+    }
+  ]
 }
